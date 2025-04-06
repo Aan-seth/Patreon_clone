@@ -10,7 +10,7 @@ import Payment from '@/models/Payment'
 import connectDB from '@/db/connectDb'
 import username from '@/app/[username]/page'
 
-export const authoptions= NextAuth({
+export const authOptions= NextAuth({
     providers: [
       // OAuth authentication providers...
       GitHubProvider({
@@ -67,4 +67,4 @@ export const authoptions= NextAuth({
     }
   })
 
-  export {authoptions as GET, authoptions as POST}
+  export {authOptions as GET, authOptions as POST}
